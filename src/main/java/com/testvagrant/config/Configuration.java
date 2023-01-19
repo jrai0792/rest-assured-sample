@@ -23,5 +23,12 @@ public final class  Configuration {
         return INSTANCE.properties.getProperty(key);
     }
 
+    public String baseURI() {
+        return getProperty("api.base.uri");
+    }
+
+    public String basePath() {
+        return getProperty("api.base.path");
+    }
 
 }
